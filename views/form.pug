@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  // Fallback to empty object if data isn't supplied (initial load)
+  - data = data || {}
+
+  // Output error list if the array has entries
+  if errors
+    ul
+      for error in errors
+        li= error.msg
+
+  // Post back to the current route
+  form(action="." method="POST")
+    label(for="name") Name:
+    input(
+      type="text"
+      id="name"
+      name="name"
+      value=data.name
+    )
+
+    label(for="email") Email:
+    input(
+      type="email"
+      id="email"
+      name="email"
+      value=data.email
+    )
+
+    input(type="submit" value="Submit")

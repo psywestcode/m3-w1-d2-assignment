@@ -1,0 +1,30 @@
+{
+  "name": "m3-w1-d2-assignment",
+  "version": "1.0.0",
+  "description": "\"Registration Form with Express-Validator and Pug\"",
+  "homepage": "https://github.com/psywestcode/m3-w1-d2-assignment#readme",
+  "bugs": {
+    "url": "https://github.com/psywestcode/m3-w1-d2-assignment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psywestcode/m3-w1-d2-assignment.git"
+  },
+  "license": "ISC",
+  "author": "\"sailesh\"",
+  "type": "commonjs",
+  "main": "start.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "watch": "nodemon ./start.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.22.2",
+    "express-validator": "^7.0.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
